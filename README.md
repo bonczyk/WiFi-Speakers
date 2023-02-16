@@ -13,6 +13,19 @@ WLAN router can be used to
 wirelessly play music on your stereo using Winamp or almost any Linux
 sound player.<br>
 <h2>Installing EsounD on the WL-500g</h2>
+
+<code>cd /usr/local/sbin
+wget http://home.in.tum.de/%7Epustka/mipsel/esd
+chmod +x esd 
+echo "#!/bin/sh" >> /usr/local/sbin/post-boot
+echo "insmod soundcore.o" >> /usr/local/sbin/post-boot
+echo "insmod audio.o" >> /usr/local/sbin/post-boot
+echo "esd -d /dev/sound/dsp -tcp -public &" >> /usr/local/sbin/post-boot
+flashfs save && flashfs commit && flashfs enable
+reboot</code>
+
+
+<h2>Background </h2>
 <p>For receiving sound streams on the router and playing them on the
 USB
 sound card, the well-kown <a
@@ -46,6 +59,6 @@ has a nice EsounD output plugin for <a href="http://www.winamp.com/">Winamp</a>
 available at&nbsp; <a href="http://www.linuxfan.dk/index.php?page=code">his
 site</a>. Note that for Winamp 5 you need to download the Winamp 2
 version, not Winamp 3. At the bottom of this page, there also is a link
-to an updated version, which includes better resampling.<br>
-</p>
+to an updated version, which includes better resampling.<br></p>
+
 
