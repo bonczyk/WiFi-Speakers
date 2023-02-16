@@ -1,5 +1,5 @@
 # WiFi-Speakers
-Play Windows audio on Linux PC (DD-WRT) with USB speakers via esounD deamon
+Play Windows audio on router/linux (DD-WRT) with USB speakers via esounD deamon
 
 <li><code>linein180.exe</code> - virtual sound line that captures all Windows audio </li>
 <li><code>out_esd.dll</code> - Winamp 2 plugin that play from virtual sound device to esounD</li>
