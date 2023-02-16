@@ -1,9 +1,9 @@
 # WiFi-Speakers
-Play Windows audio on your Linux PC (DD-WRT) with USB speakers
+Play Windows audio on Linux PC (DD-WRT) with USB speakers via esounD deamon
 
-<li>linein180.exe - virtual sound line that captures all Windows audio </li>
-<li>out_esd.dll - Winamp 2 plugin that play from virtual sound device to esounD</li>
-<li>esd - linux esounD deamon</li>
+<li><code>linein180.exe</code> - virtual sound line that captures all Windows audio </li>
+<li><code>out_esd.dll</code> - Winamp 2 plugin that play from virtual sound device to esounD</li>
+<li><code>esd</code> - linux esounD deamon</li>
 
 <h1>Using the WL-500g as a wireless soundcard</h1>
 With an external USB soundcard and <a href="http://wl500g.dyndns.org/">Oleg's
